@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const Photos = () => (
     <Layout>
-        <SEO title="Photos"/>
+        <SEO title="Page Details"/>
         <br/>
         <h1 style={{
             fontFamily:"inherit"
