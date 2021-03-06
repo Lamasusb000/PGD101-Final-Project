@@ -1,0 +1,10 @@
+.Header-Container{
+    background-color: rgb(37, 38, 39);
+}
+.navbar-brand{
+    font-size: 3vh;
+    padding: 1vh 0 1vh;
+}
+.navbar{
+    padding: 1vh 1.5vw 1vh;
+}

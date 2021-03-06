@@ -1,0 +1,23 @@
+.Footer-Container{
+    background-color: rgb(59, 55, 55);
+    margin: 0%;
+    height: fit-content;
+    padding: 2vh 2vh 0.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.Left-Column, .Right-Column{
+    width: 50%;
+    text-align: center;
+}
+.Right-Column ul, .Right-Column li{
+    text-align: left;
+}
+@media screen and (max-width: 700px){
+    .Footer-Container{
+        flex-direction: column;
+    }
+    .Left-Column, .Right-Column{
+        width: 100%;
+    }
+}

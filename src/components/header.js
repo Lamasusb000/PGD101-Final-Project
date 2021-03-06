@@ -1,33 +1,65 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import "../components/CSS/Header.css"
+import "../components/CSS/bootstrap.min.css"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    className="Header-Container">
+      <nav 
+      className="navbar navbar-light">
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+          className="navbar-brand text-white">
+            PGD101 Final Project
         </Link>
-      </h1>
-    </div>
+        <button
+        className="navbar-toggler navbar-dark"
+        type="button"
+        data-toggle="collapse"
+        data-target="#BurgerMenu"
+        aria-controls="BurgerMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span
+          className="navbar-toggler-icon">
+
+          </span>
+        </button>
+
+          <div
+          className="collapse navbar-collapse"
+          id="BurgerMenu">
+            <ul
+            className="navbar-nav mr-auto">
+              <li
+              className="nav-item active">
+                <Link
+                to="/"
+                className="nav-item text-white">
+                  Home
+                </Link>
+              </li>
+              <li
+              className="nav-item">
+                <Link
+                to="/Page-Details"
+                className="nav-item text-white">
+                  Page Details
+                </Link>
+              </li>
+              <li
+              className="nav-item">
+                <a
+                href="https://egcc.edu/"
+                className="nav-item text-white">
+                  My School
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
   </header>
 )
 
