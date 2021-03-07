@@ -51,6 +51,14 @@ const Header = ({ siteTitle }) => (
               </li>
               <li
               className="nav-item">
+                <Link
+                to="/Other-Projects"
+                className="nav-item text-white">
+                  My Other Projects
+                </Link>
+              </li>
+              <li
+              className="nav-item">
                 <a
                 href="https://egcc.edu/"
                 className="nav-item text-white">
